@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="327.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.work_work.Widget">
+    <Label fx:id="widget1" layoutX="104.0" layoutY="102.0" text="Виджет 1" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="102.0" />
+    <Label fx:id="widget2" layoutX="104.0" layoutY="149.0" text="Виджет 2" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="149.0" />
+    <Label fx:id="widget3" layoutX="104.0" layoutY="200.0" text="Виджет 3" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="200.0" />
+    <CheckBox fx:id="check1" layoutX="254.0" layoutY="102.0" selected="true" text="Показать/Скрыть Виджет 1" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="102.0" />
+    <CheckBox fx:id="check2" layoutX="254.0" layoutY="152.0" selected="true" text="Показать/Скрыть Виджет 2" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="152.0" />
+    <CheckBox fx:id="check3" layoutX="254.0" layoutY="198.0" prefHeight="18.0" prefWidth="181.0" selected="true" text="Показать/Скрыть Виджет 3" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="198.0" />
+</AnchorPane>

@@ -3,27 +3,29 @@ package org.example.work_work;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class WordSwitcher extends Application {
+    public TextField field1;
+    public Button switchButton;
+    public TextField field2;
     // Переменная для отслеживания направления переключения (из первого во второе или наоборот)
     private boolean isLeftToRight = true;
 
     @Override
     public void start(Stage primaryStage) {
-        // Создание первого текстового поля
-        TextField field1 = new TextField();
+        // Инициализация полей класса
+        field1 = new TextField();
         field1.setPromptText("Писать сюда, там не пишется");
 
-        // Создание второго текстового поля
-        TextField field2 = new TextField();
+        field2 = new TextField();
         field2.setPromptText("Тут не писать, здесь появится");
         field2.setEditable(false); // Второе поле недоступно для ввода по умолчанию
 
-        // Создание кнопки для переключения текста между полями
-        Button switchButton = new Button("туда"); // Изначально кнопка указывает направление "вправо"
+        switchButton = new Button("туда"); // Изначально кнопка указывает направление "вправо"
 
         // Обработчик события нажатия кнопки
         switchButton.setOnAction(event -> {
@@ -54,12 +56,14 @@ public class WordSwitcher extends Application {
         VBox layout = new VBox(20, field1, switchButton, field2); // Расстояние между элементами - 20 пикселей
 
         // Создание сцены
-        Scene scene = new Scene(layout, 300, 300);
+        Scene scene = new Scene(layout);
 
         // Настройка основного окна
-        primaryStage.setScene(scene); //Устанавливается сцена на основное окно.
+        primaryStage.setScene(scene); // Устанавливается сцена на основное окно.
         primaryStage.setTitle("Перекидыватель слов");
-        primaryStage.show(); //Отображается основное окно на экране.
+        primaryStage.setMinWidth(300); // Устанавливает минимальную ширину окна
+        primaryStage.setMinHeight(300); // Устанавливает минимальную высоту окна
+        primaryStage.show(); // Отображается основное окно на экране.
     }
 
     public static void main(String[] args) {
