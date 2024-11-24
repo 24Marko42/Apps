@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.geometry.Insets?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.work_work.OrderController" alignment="CENTER" spacing="10.0">
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.work_work.a_new_order" alignment="CENTER" spacing="10.0">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <CheckBox fx:id="pizza" text="Пицца - 500 руб." />
-    <TextField fx:id="pizzaQuantity" text="1" disable="true" />
-    <CheckBox fx:id="sushi" text="Суши - 300 руб." />
-    <TextField fx:id="sushiQuantity" text="1" disable="true" />
-    <CheckBox fx:id="burger" text="Бургер - 200 руб." />
-    <TextField fx:id="burgerQuantity" text="1" disable="true" />
+    <CheckBox fx:id="pivo" text="Пиво - 500 руб." />
+    <TextField fx:id="pivoQuantity" text="1" disable="true" />
+    <CheckBox fx:id="viski" text="Виски - 300 руб." />
+    <TextField fx:id="viskiQuantity" text="1" disable="true" />
+    <CheckBox fx:id="soju" text="Соджа - 200 руб." />
+    <TextField fx:id="sojuQuantity" text="1" disable="true" />
     <Button fx:id="calculate" text="Посчитать" />
     <TextArea fx:id="receipt" editable="false" />
 </VBox>
