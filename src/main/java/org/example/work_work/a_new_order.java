@@ -8,6 +8,15 @@ import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
 
 public class a_new_order extends Application {
+    public TextField pivoQuantity;
+    public CheckBox pivo;
+    public TextField viskiQuantity;
+    public CheckBox soju;
+    public TextField sojuQuantity;
+    public Button calculate;
+    public CheckBox viski;
+    public TextArea receipt;
+
     @Override
     public void start(Stage primaryStage) {
         // Создаем чекбоксы для выбора блюд
